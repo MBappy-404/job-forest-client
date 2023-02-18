@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvaider/Auth';
+import logo from '../../../Assetes/images/logo (1).png'
 
 const Navbar = () => {
      const [navbar, setNavbar] = useState(false);
@@ -14,13 +15,13 @@ const Navbar = () => {
      }
      return (
           <div>
-               <div className='sticky top-0  glass bg-sky-700 z-50'>
+               <div className='sticky top-0  bg-gradient-to-r from-white to-indigo-900  z-50'>
                <nav className="w-full sticky top-0 z-50">
                     <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                          <div>
                               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                                    <a href=" ">
-                                        <h2 className="text-2xl font-bold text-white">Bappy</h2>
+                                        <img src={logo} alt="" />
                                    </a>
                                    <div className="md:hidden">
                                         <button
