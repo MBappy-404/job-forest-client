@@ -2,14 +2,18 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaGoogle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvaider/Auth';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const SignIn = () => {
   const { register, formState: { errors }, handleSubmit } = useForm();
   const provider = new GoogleAuthProvider();
      const { signIn, googleProvider,loading,setLoading } = useContext(AuthContext);
      const [loginError, setLoginError] = useState();
+     const navigate = useNavigate();
+     const MySwal = withReactContent(Swal);
 
 
      const handleLogin = data => {
@@ -19,9 +23,14 @@ const SignIn = () => {
            .then(result => {
                 const user = result.user;
                 console.log(user);
-                
-               
                 setLoading(false)
+                navigate('/home')
+                MySwal.fire({
+                  title: 'Login Success',
+                  icon: 'success',
+                  timer: 1500,
+                  showConfirmButton: false,
+             });
 
            })
            .catch(err => {
@@ -37,6 +46,13 @@ const SignIn = () => {
        .then(result => {
             const user = result.user;
             console.log(user);
+            MySwal.fire({
+              title: 'Login Success',
+              icon: 'success',
+              timer: 1500,
+              showConfirmButton: false,
+         });
+            navigate('/home')
              
        })
        .catch(err => {

@@ -64,13 +64,7 @@ const Jobs = () => {
                                         <p class="mt-2 text-sm text-slate-500">Visa process by helping you create the necessary documentation
                                         </p>
                                    </div>
-
-
-
-
                               </div>
-
-                              
                          </div>
                     </div>
                </div>

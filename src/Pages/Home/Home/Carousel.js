@@ -5,53 +5,11 @@ import './Carousel.css'
 const Carousel = () => {
   return (
     <div>
-      {/* <div>
-        
-        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-
-        </div>
-   
-        <div class="carousel-inner relative w-full overflow-hidden">
-          
-          <div class="carousel-item active relative float-left w-full">
-          <div class="w-full bg-cover bg-center  banner-image" style={{height: "32rem", backgroundImage: `url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)`}}>
-        <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-70">
-             
-        </div>
-    </div>
-            <div class="carousel-caption  top-24  absolute text-center">
-              <h5 class="text-5xl font-bold ">Find the job that fits your life</h5>
-              <p className='text-lg mt-3 font-semibold text-gray-200'>Create your profile to find thousands Jobs, Build your Career & Employment!</p>
-              <form>   
-         
-        <div class="relative mt-7">
-            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-            </div>
-            <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm outline-none  text-gray-900 bg-gray-50 rounded-md       " placeholder="Search your dream jobs..." required/>
-            <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600"   data-mdb-ripple="true" data-mdb-ripple-color="light" >Find Job</button>
-        </div>
-    </form>
-            </div>
-            
-          </div>
-
-
-
-
-        </div>
-         
-
-
-      </div> */}
-
-
-
-
+      {/* HERO  */}
       <div class="relative  bg-blueGray-50">
         <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div class="absolute  top-0 w-full h-full bg-center bg-cover" style={{
-            backgroundImage: `url('http://theme-vessel-templates.theme-vessel.ey.r.appspot.com/jobb/img/banner/banner-2.jpg')`
+            backgroundImage: `url('http://theme-vessel-templates.theme-vessel.ey.r.appspot.com/jobb/img/banner/banner-2.jpg')`,height: "400px"
           }}>
             <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
           </div>
@@ -59,13 +17,11 @@ const Carousel = () => {
             <div class="items-center flex flex-wrap">
               <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div class="pr-12">
-                  <h1 class="text-white font-semibold text-4xl">
+                  <h1 class="text-white text-center font-semibold text-4xl">
                   Find the job that fits your life
                   </h1>
                   <p class="mt-4 text-lg text-gray-300">
-                    This is a simple example of a Landing Page you can build using
-                    Notus JS. It features multiple CSS components based on the
-                    Tailwind CSS design system.
+                  Create your profile to find thousands Jobs, Build your Career & Employment!
                   </p>
                 </div>
               </div>

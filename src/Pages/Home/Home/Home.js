@@ -12,8 +12,8 @@ const Home = () => {
               <Carousel></Carousel>
               <Jobs></Jobs>
               <AllJobs></AllJobs>
-              <TopCompanies></TopCompanies>
               <Steps></Steps>
+              <TopCompanies></TopCompanies>
           </div>
      );
 };

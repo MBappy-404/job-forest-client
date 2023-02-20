@@ -3,10 +3,10 @@ import React from 'react';
 const Steps = () => {
      return (
           <div>
-            <h2 className='md:text-3xl text-2xl font-bold text-gray-600 ml-5 md:ml-16 md:mt-10 mt-5'>How To Apply</h2>   
+            <h2 className='md:text-3xl text-2xl font-bold text-gray-700 ml-7 md:ml-20 md:mt-10 mt-5'>How To Apply</h2>   
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-12 lg:py-20">
           <div className="grid gap-6  lg:grid-cols-2">
-            <div className="lg:py-6 lg:pr-16 ml-20">
+            <div className="lg:py-6 lg:pr-16 ml-5">
               <div className="flex">
                 <div className="flex flex-col items-center mr-4">
                   <div>

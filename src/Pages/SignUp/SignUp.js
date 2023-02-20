@@ -1,11 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvaider/Auth';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const SignUp = () => {
      const { register, formState: { errors }, handleSubmit } = useForm();
      const { createUser, updateUser } = useContext(AuthContext);
      const [signUpError, setSignupError] = useState('')
+     const navigate = useNavigate()
+     const MySwal = withReactContent(Swal);
    
      const handleSignup = data => {
 
@@ -13,6 +18,13 @@ const SignUp = () => {
                .then(result => {
                     const user = result.user;
                     console.log(user);
+                    MySwal.fire({
+                         title: 'Login Success',
+                         icon: 'success',
+                         timer: 1500,
+                         showConfirmButton: false,
+                    });
+                    navigate('/home')
                      
                     
 
