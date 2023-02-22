@@ -6,21 +6,21 @@ const Carousel = () => {
   return (
     <div>
       {/* HERO  */}
-      <div class="relative  bg-blueGray-50">
-        <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
-          <div class="absolute  top-0 w-full h-full bg-center bg-cover" style={{
-            backgroundImage: `url('http://theme-vessel-templates.theme-vessel.ey.r.appspot.com/jobb/img/banner/banner-2.jpg')`,height: "400px"
+      <div class="relative">
+        <div class="relative pt-16 pb-32 flex content-center items-center justify-center ">
+          <div class="absolute  top-0 w-full h-full   bg-cover" style={{
+            backgroundImage: `url('https://static1.shine.com/l/m/images/blog/online_job_seach_portal_features.jpg')`,height: "400px"
           }}>
-            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+            <span   class="w-full h-full absolute opacity-70  bg-black " ></span>
           </div>
           <div class="container relative mx-auto">
             <div class="items-center flex flex-wrap">
               <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div class="pr-12">
-                  <h1 class="text-white text-center font-semibold text-4xl">
+                  <h1 class="text-white text-center font-semibold text-2xl md:text-4xl">
                   Find the job that fits your life
                   </h1>
-                  <p class="mt-4 text-lg text-gray-300">
+                  <p class="mt-4 text-sm md:text-lg  px-16 text-gray-300">
                   Create your profile to find thousands Jobs, Build your Career & Employment!
                   </p>
                 </div>
